@@ -1,0 +1,67 @@
+---
+import Search from "../icons/Search.astro";
+---
+
+<div
+  class="bg-white p-12 max-w-[420px] rounded-xl text-neutral-800 flex flex-col gap-3 shadow-xl"
+>
+  <h3 class="text-3xl font-semibold">Alojamientos vacaciones en Tromsø</h3>
+  <p class="text-neutral-600 font-medium">
+    Encontrá y reservá alojamientos únicos para su estadía en Tromsø
+  </p>
+  <form action="" class="flex flex-col gap-3">
+    <select
+      id="month-select"
+      required
+      class="w-full border rounded-lg p-4 font-medium"
+    >
+      <option value="" disabled selected>Meses</option>
+      <option value="enero">Enero</option>
+      <option value="febrero">Febrero</option>
+      <option value="marzo">Marzo</option>
+      <option value="abril">Abril</option>
+      <option value="mayo">Mayo</option>
+      <option value="junio">Junio</option>
+      <option value="julio">Julio</option>
+      <option value="agosto">Agosto</option>
+      <option value="septiembre">Septiembre</option>
+      <option value="octubre">Octubre</option>
+      <option value="noviembre">Noviembre</option>
+      <option value="diciembre">Diciembre</option>
+    </select>
+
+    <select
+      id="activity-select"
+      required
+      class="w-full border rounded-lg p-4 font-medium"
+    >
+      <option value="" disabled selected>Actividades</option>
+      <option value="cultura-y-eventos">Cultura y eventos</option>
+      <option value="turismo-en-la-ciudad">Turismo en la ciudad</option>
+      <option value="cultura-sami-y-renos">Cultura Sami y renos</option>
+      <option value="recreacion-y-deportes">Recreación y deportes</option>
+      <option value="excursiones-de-fauna-salvaje"
+        >Excursiones de fauna salvaje</option
+      >
+      <option value="husky">Husky</option>
+      <option value="ballenas">Ballenas</option>
+      <option value="accion-y-aventura">Acción y aventura</option>
+      <option value="crucero-y-vela">Crucero y vela</option>
+      <option value="pesca">Pesca</option>
+      <option value="excursiones-al-fiordo">Excursiones al fiordo</option>
+      <option value="kayak">Kayak</option>
+      <option value="alojamiento-de-aventura">Alojamiento de aventura</option>
+      <option value="esqui-y-raquetas-de-nieve"
+        >Esquí y raquetas de nieve</option
+      >
+      <option value="motonieve">Motonieve</option>
+      <option value="ciclismo">Ciclismo</option>
+      <option value="senderismo">Senderismo</option>
+    </select>
+
+    <button
+      class="bg-[#E41761] hover:bg-[#C01250] transition duration-300 mt-3 text-white font-semibold rounded-xl flex items-center justify-center gap-2 py-3"
+      ><Search />Buscar</button
+    >
+  </form>
+</div>
